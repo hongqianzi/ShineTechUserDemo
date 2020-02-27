@@ -4,7 +4,7 @@ using System.Text;
 
 namespace UserShineTech.Users.Dtos
 {
-    public class RegisterUser
+    public class RegisterUserDto
     {
         public string EmailAddress { get; set; }
         public string Name { get; set; }

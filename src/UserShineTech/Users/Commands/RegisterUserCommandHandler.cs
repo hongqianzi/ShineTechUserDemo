@@ -1,4 +1,5 @@
-﻿using UserShineTech.Commands;
+﻿using System;
+using UserShineTech.Commands;
 using UserShineTech.Users.Commands.Repositories;
 
 namespace UserShineTech.Users.Commands
@@ -15,7 +16,13 @@ namespace UserShineTech.Users.Commands
         }
         public void Execute(RegisterUserCommand command)
         {
-            _writeBookRepository.CreateUser(command);
+            var dto = command.Dto;
+            var user = readonlyUserRepository.GetUserByEmail(dto.EmailAddress);
+            if (user != null) 
+            {
+                throw new Exception("此邮箱已被注册");
+            }
+            _writeBookRepository.CreateUser(dto);
         }
     }
 

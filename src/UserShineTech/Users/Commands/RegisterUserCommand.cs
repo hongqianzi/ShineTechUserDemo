@@ -8,8 +8,8 @@ namespace UserShineTech.Users.Commands
 {
     public class RegisterUserCommand : ICommand
     {
-        public RegisterUser Dto { get; set; }
-        public RegisterUserCommand(RegisterUser dto)
+        public RegisterUserDto Dto { get; set; }
+        public RegisterUserCommand(RegisterUserDto dto)
         {
             Dto = dto;
         }
