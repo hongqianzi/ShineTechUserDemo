@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace UserShineTech.Commands
+namespace ShineTech.CQRS.Command.Commands
 {
     public class CommandHandlerFactory : ICommandHandlerFactory
     {
         private readonly IServiceProvider _serviceProvider;
 
-        public CommandHandlerFactory(IServiceProvider serviceProvider) 
+        public CommandHandlerFactory(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;
         }

@@ -1,6 +1,6 @@
 ﻿using UserShineTech.Users.Dtos;
 
-namespace UserShineTech.Users.Commands.Repositories
+namespace UserShineTech.Users.Repositories
 {
     public interface IWritableUserRepository
     {

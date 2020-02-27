@@ -1,6 +1,6 @@
-﻿using System;
-using UserShineTech.Commands;
-using UserShineTech.Users.Commands.Repositories;
+﻿using ShineTech.CQRS.Command.Commands;
+using System;
+using UserShineTech.Users.Repositories;
 
 namespace UserShineTech.Users.Commands
 {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UserShineTech.Commands
+namespace ShineTech.CQRS.Command.Commands
 {
     interface ICommandBus
     {

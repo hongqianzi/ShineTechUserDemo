@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UserShineTech.Commands
+namespace ShineTech.CQRS.Command.Commands
 {
-    public interface ICommandHandler<TCommand> where TCommand:ICommand
+    public interface ICommandHandler<TCommand> where TCommand : ICommand
     {
         void Execute(TCommand command);
 

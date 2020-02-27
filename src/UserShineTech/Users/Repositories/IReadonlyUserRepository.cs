@@ -1,6 +1,7 @@
-﻿using UserShineTech.Users.Dtos;
+﻿using UserShineTech.Users.Commands;
+using UserShineTech.Users.Dtos;
 
-namespace UserShineTech.Users.Commands.Repositories
+namespace UserShineTech.Users.Repositories
 {
     public interface IReadonlyUserRepository
     {

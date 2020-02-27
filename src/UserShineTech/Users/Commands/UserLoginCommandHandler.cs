@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using UserShineTech.Commands;
-using UserShineTech.Users.Commands.Repositories;
+﻿using ShineTech.CQRS.Command.Commands;
+using UserShineTech.Users.Repositories;
 
 namespace UserShineTech.Users.Commands
 {
