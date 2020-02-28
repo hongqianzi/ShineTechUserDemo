@@ -5,7 +5,7 @@ namespace UserShineTech.Users.Repositories
 {
     public interface IReadonlyUserRepository
     {
-        bool Login(UserLoginCommand command);
+        UserDto Login(UserLoginCommand command);
         UserItemDto GetUserByEmail(string emailAddress);
     }
 }

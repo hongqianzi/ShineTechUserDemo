@@ -8,5 +8,6 @@ namespace ShineTech.CQRS.Command.Commands
     {
         void Execute(TCommand command);
 
+
     }
 }

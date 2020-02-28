@@ -15,7 +15,7 @@ namespace UserShineTech.Users.Commands
 
         public void Execute(UserLoginCommand command)
         {
-            _readonlyUserRepository.Login(command);
+            var user = _readonlyUserRepository.Login(command);
         }
     }
 }
