@@ -24,6 +24,11 @@ namespace UserShineTech.Users.Commands
             }
             _writeBookRepository.CreateUser(dto);
         }
+
+        public void ExecuteResult<T>(RegisterUserCommand command)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 
